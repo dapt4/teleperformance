@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teleperformance</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/6cde70affb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="content_logo">
+        <img src="assets/css3.png" alt="Logo" />
+        <span>MASTER EN CSS</span>
+      </div>
+      <div class="content_menu">
+        <button class="content_menu--left" onclick="showAside()">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+        <button class="content_menu--right" onclick="showMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="content_menu--list">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#" onclick="gotopage('Contenido')">Contenido</a></li>
+          <li><a href="#" onclick="gotopage('Requerimientos')">Requerimientos</a></li>
+          <li><a href="#" onclick="gotopage('Lenguajes')">Lenguajes</a></li>
+          <li><a href="#" onclick="gotopage('Frameworks')">Frameworks</a></li>
+          <li><a href="#" onclick="gotopage('Proyectos')">Proyectos</a></li>
+          <li><a href="#" onclick="gotopage('El instructor')">El instructor</a></li>
+          <li><a href="#" onclick="gotopage('Reseñas')">Reseñas</a></li>
+          <li><a href="#" onclick="gotopage('Blog')">Blog</a></li>
+          <li><a href="#" onclick="gotopage('Contacto')">Contacto</a></li>
+          <li><a href="#" id="logedUser" onclick="logOut()"> <i class="fas fa-user"></i> </a></li>
+        </ul>
+      </div>
+      <div class="content_main">
+        <div class="content_main--aside">
+          <div class="login">
+            <div class="login_title">Entrar a la web</div>
+            <div class="login_form">
+              <label id="userLabel" for="user">Usuario: </label>
+              <input id="user" type="text">
+              <label id="passLabel" for="pass">Contraseña</label>
+              <input type="password" id="pass">
+              <button id="loginButton" onclick="login()">Entrar</button>
+              <a href="www.google.com">Zona de Alumnos</a>
+              <a href="www.google.com">Zona del Profesor</a>
+              <a href="www.google.com">Acceso a calificaciones</a>
+            </div>
+          </div>
+          <div class="links">
+            <div class="links_title">Enlaces de interés</div>
+            <ul class="links_list">
+              <li><a href="www.google.com">Master en Javascript</a></li>
+              <li><a href="www.google.com">Master en PHP</a></li>
+              <li><a href="www.google.com">Master en Frameworks js</a></li>
+              <li><a href="www.google.com">Master en webs full-stack</a></li>
+              <li><a href="www.google.com">victorroblesweb.es</a></li>
+            </ul>
+          </div>
+          <div class="phrase">
+            Frase del día: <br>
+            Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit.<br>
+            <a href="www.google.com">Leer mas frases</a>
+          </div>
+        </div>
+        <div class="content_main--posts">
+          <div class="post">
+            <img class="cinta cinta-izq" src="assets/cinta.png" alt="cinta">
+            <img class="cinta cinta-der" src="assets/cinta.png" alt="cinta">
+            <div class="post_title">Noticias de front-end</div>
+            <div class="post_content">
+              <div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+              <div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+<div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+<div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+<div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+
+            </div>
+          </div>
+<div class="post">
+            <img class="cinta cinta-izq" src="assets/cinta.png" alt="cinta">
+            <img class="cinta cinta-der" src="assets/cinta.png" alt="cinta">
+            <div class="post_title red">Noticias de back-end</div>
+            <div class="post_content">
+              <div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+              <div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+<div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+<div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+<div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+
+            </div>
+          </div>
+<div class="post">
+            <img class="cinta cinta-izq" src="assets/cinta.png" alt="cinta">
+            <img class="cinta cinta-der" src="assets/cinta.png" alt="cinta">
+  <div class="post_title yellow">Noticias del instructor</div>
+            <div class="post_content">
+              <div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+              <div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+<div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+<div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+<div class="post_content--article">
+                <p>
+                  <i class="far fa-file"></i> <a href="www.google.com" class="title">Titulo de la entrada</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, tellus id faucibus petrium, mi lectus luctus nibh, eu viverra ante felis vel arcu. Donec at elit eu erat pretium pellentesque ut sed mauris. Integer ac libero feugiat mauris aliquam.
+                  <p class="date">[18-10-21 Diego]</p>
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="content_footer">
+        <span>
+          &reg; Desarrollado por Victor Robles WEB
+        </span>
+        <span>
+          Más contenido y formación de desarrollo web en <a href="www.google.com">victorroblesweb.es/academy</a>
+        </span>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+</html>

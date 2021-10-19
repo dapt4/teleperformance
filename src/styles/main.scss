@@ -1,0 +1,290 @@
+$green: #66bd59;
+$green2: #5ebb38;
+$green3: #48a727;
+$gray20: #f3f3f3;
+$gris30: #ccc;
+$black: #333333;
+$red: #aa001b;
+$yellow: #d7a421;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/dots.png");
+  background-size: 200px;
+  background-repeat: repeat;
+  background-color: $gray20;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.content {
+  &_logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    img {
+      width: 100px;
+      height: auto;
+    }
+
+    span {
+      color: $green2;
+      font-family: "IBM Plex Sans", sans-serif;
+      text-shadow: -0px 2px 2px #333;
+      font-weight: 800;
+      letter-spacing: 5px;
+    }
+    @media (min-width: 0px) {
+      span {
+        font-size: 1.2em;
+      }
+    }
+    @media (min-width: 470px) {
+      font-size: 2em;
+    }
+  }
+  &_menu {
+    position:relative;
+    display: flex;
+    width: 100%;
+    background-color: $black;
+    justify-content: space-between;
+    padding: 10px;
+    @media (min-width: 1280px) {
+      padding: 0px;
+      justify-content: center;
+    }
+    &--left, &--right{
+      border: 1px solid #ccc;
+      background-color: transparent;
+      color: white;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    &--left {
+      @media (min-width: 0px) {
+        align-self: flex-start;
+        margin-left: 20px;
+      }
+      @media (min-width: 1280px) {
+        display: none;
+      }
+    }
+    &--right {
+      @media (min-width: 0px) {
+        align-self: flex-end;
+        margin-right: 20px;
+      }
+      @media (min-width: 1280px) {
+        display: none;
+      }
+    }
+    &--list {
+      display: none;
+      @media (min-width: 1280px) {
+        display: block;
+      }
+
+      li {
+        display: inline-block;
+        &:last-of-type {
+          a {
+            border-right: 1px solid #555;
+          }
+        }
+        a {
+          display: block;
+          color: white;
+          text-decoration: none;
+          padding: 17px;
+          border-left: 1px solid #555;
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+      &.active{
+        display: block;
+        position: absolute;
+        top:0;
+        right: 80px;
+        background-color: $black;
+        z-index: 9999;
+        li{
+          display: list-item;
+          list-style-type: none;
+        }
+      }
+    }
+  }
+  &_main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 5%;
+
+    &--aside {
+      width: 20%;
+      height: fit-content;
+      background-color: white;
+      padding-bottom: 20px;
+      .login {
+        padding: 10px;
+        border-bottom: 3px dotted $gris30;
+        &_title {
+          background-color: $gray20;
+          border: 1px solid #777;
+          border-left: none;
+          border-right: none;
+          text-align: center;
+          font-weight: 600;
+          padding: 3px;
+        }
+        &_form {
+          margin-top: 20px;
+          label {
+            display: block;
+            text-align: center;
+          }
+          input {
+            width: 100%;
+          }
+          a {
+            text-decoration: none;
+            color: $green3;
+          }
+          button {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 10px;
+            background-image: linear-gradient($green2, $green3);
+            border: 1px solid $green3;
+            color: white;
+            font-weight: 600;
+            border-radius: 3px;
+          }
+        }
+      }
+      .links {
+        padding: 10px;
+        border-bottom: 3px dotted $gris30;
+        &_title {
+          margin: 15px 0;
+          background-color: $gray20;
+          border: 1px solid #777;
+          border-left: none;
+          border-right: none;
+          text-align: center;
+          font-weight: 600;
+          padding: 3px;
+        }
+        &_list {
+          margin-left: 20px;
+          padding-bottom: 200px;
+          list-style: square;
+          li {
+            padding: 5px;
+            a {
+              text-decoration: none;
+              color: $green3;
+            }
+          }
+        }
+      }
+      .phrase {
+        padding: 60px 10px;
+        border-bottom: 3px dotted $gris30;
+      }
+    }
+    &--posts {
+      width: 60%;
+      .post {
+        position: relative;
+        .cinta {
+          position: absolute;
+          top: -20px;
+          width: 45px;
+          &.cinta-izq {
+            left: 10px;
+          }
+          &.cinta-der {
+            right: 10px;
+          }
+        }
+        display: block;
+        margin-bottom: 30px;
+        background-color: white;
+        box-shadow: 0px 0px 5px $gris30;
+        padding: 20px;
+        &_title {
+          text-align: center;
+          font-size: 1.5em;
+          font-weight: 500;
+          border-bottom: 1px solid $gris30;
+          padding-bottom: 10px;
+          &.yellow {
+            color: $yellow;
+          }
+          &.red {
+            color: $red;
+          }
+        }
+        &_content {
+          padding: 20px;
+          &--article {
+            margin-bottom: 20px;
+            .title {
+              color: $green2;
+              text-decoration: none;
+            }
+            .date {
+              color: #555;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      &--aside {
+        display: none;
+        &.activ{
+          display: block;
+          position: absolute;
+          top: -30px;
+          left: 20px;
+          z-index: 9999;
+          width: 200px;
+          border: 1px solid $gris30;
+          box-shadow: 3px 3px 5px $gris30;
+        }
+      }
+      &--posts {
+        width: 90% ;
+      }
+    }
+  }
+  &_footer {
+    display: flex;
+    background-color: $black;
+    color: white;
+    font-weight: 1.3em;
+    padding: 17px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    span {
+      a {
+        text-decoration: none;
+        color: $green2;
+      }
+    }
+  }
+}

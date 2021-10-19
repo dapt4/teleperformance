@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="482"
+   height="482"
+   viewBox="0 0 482 482"
+   version="1.1"
+   preserveAspectRatio="xMidYMid"
+   id="svg6"
+   sodipodi:docname="css3-seeklogo.com.svg"
+   inkscape:export-filename="/home/diego/Documentos/teleperformance/src/assets/css3.png"
+   inkscape:export-xdpi="63"
+   inkscape:export-ydpi="63"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="1.0172414"
+     inkscape:cx="6.5932203"
+     inkscape:cy="116"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <circle
+     style="opacity:1;vector-effect:none;fill:#66bd59;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:31.97563362;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+     id="path822"
+     cx="241"
+     cy="241"
+     r="224.55429" />
+  <g
+     id="g4"
+     transform="translate(113,125.19102)"
+     style="fill:#ffffff">
+    <path
+       d="M 100.90241,231.61795 217.35849,192.96488 256,0 H 37.867293 L 29.570461,43.055701 H 204.38169 l -5.44263,27.490476 H 23.862057 L 15.299449,113.60188 H 190.12223 l -9.6026,49.2841 -70.54617,23.07628 -60.955134,-23.07628 4.159971,-21.52785 H 10.122596 L 0,192.96488 100.90241,231.61795"
+       id="path2"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff" />
+  </g>
+</svg>

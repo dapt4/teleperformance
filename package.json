@@ -1,0 +1,14 @@
+{
+  "name": "teleperformance",
+  "version": "1.0.0",
+  "description": "a test for teleperformance",
+  "main": "src/index.js",
+  "scripts": {
+    "style": "sass -w src/styles/main.scss src/styles/main.css"
+  },
+  "author": "Diego Perozo",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.43.2"
+  }
+}
